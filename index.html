@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>魔帆听雨-享受雨声</title>
+<!--可无视-->
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link href='http://fonts.useso.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/MorFans.css" />
+<bgsound src="http://853.kaiping.gov.cn/Music/When_The_Love_Falls.mp3" loop="-1">
+<!--必要样式-->
+<link rel="stylesheet" type="text/css" href="css/styleM.css" />
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>	
+	<body class="demo-1">
+	<div class="image-preload">
+		<img src="img/drop-color.png" alt="">
+		<img src="img/drop-alpha.png" alt="">
+		<img src="img/weather/texture-rain-fg.png" />
+		<img src="img/weather/texture-rain-bg.png" />
+		<img src="img/weather/texture-sun-fg.png" />
+		<img src="img/weather/texture-sun-bg.png" />
+		<img src="img/weather/texture-fallout-fg.png" />
+		<img src="img/weather/texture-fallout-bg.png" />
+		<img src="img/weather/texture-drizzle-fg.png" />
+		<img src="img/weather/texture-drizzle-bg.png" />
+	</div>
+	<div class="container">
+		<header class="codrops-header">
+			<h1>魔帆听雨</h1>
+			<nav class="codrops-demos">
+				<a class="current-demo" href="index.html">默认</a>
+				<a href="vmf.html">动态</a>
+			</nav>
+		</header>
+		<div class="slideshow">
+			<canvas width="1" height="1" id="container" style="position:absolute"></canvas>
+			<!-- Heavy Rain -->
+			<div class="slide" id="slide-1" data-weather="rain">
+				<div class="slide__element slide__element--date">魔帆听雨</div>
+				<div class="slide__element slide__element--temp"><SUP><small style="font-size: 12px;">当前温度</small></SUP>12°<small>C</small></div>
+			</div>
+			<!-- Drizzle -->
+			<div class="slide" id="slide-2" data-weather="drizzle">
+				<div class="slide__element slide__element--date">魔帆听雨</div>
+				<div class="slide__element slide__element--temp"><SUP><small style="font-size: 12px;">当前温度</small></SUP>18°<small>C</small></div>
+			</div>
+			<!-- Sunny -->
+			<div class="slide" id="slide-3" data-weather="sunny">
+				<div class="slide__element slide__element--date">魔帆听雨</div>
+				<div class="slide__element slide__element--temp"><SUP><small style="font-size: 12px;">当前温度</small></SUP>25°<small>C</small></div>
+			</div>
+			<!-- Heavy rain -->
+			<div class="slide" id="slide-5" data-weather="storm">
+				<div class="slide__element slide__element--date">魔帆听雨</div>
+				<div class="slide__element slide__element--temp"><SUP><small style="font-size: 12px;">当前温度</small></SUP>20°<small>C</small></div>
+			</div>
+			<!-- Fallout (greenish overlay with slightly greenish/yellowish drops) -->
+			<div class="slide" id="slide-4" data-weather="fallout">
+				<div class="slide__element slide__element--date">魔帆听雨</div>
+				<div class="slide__element slide__element--temp"><SUP><small style="font-size: 12px;">当前温度</small></SUP>34°<small>C</small></div>
+			</div>
+			<nav class="slideshow__nav">
+				<a class="nav-item" href="#slide-1"><i class="icon icon--rainy"></i><span>雨</span></a>
+				<a class="nav-item" href="#slide-2"><i class="icon icon--drizzle"></i><span>小雨</span></a>
+				<a class="nav-item" href="#slide-3"><i class="icon icon--sun"></i><span>太阳雨</span></a>
+				<a class="nav-item" href="#slide-5"><i class="icon icon--storm"></i><span>雷电雨</span></a>
+				<a class="nav-item" href="#slide-4"><i class="icon icon--radioactive"></i><span>酸雨</span></a>
+			</nav>
+		</div>
+		<p class="nosupport">啊哦，您的浏览器并不支持WebGL，请您更新您的浏览器！</p>
+	</div>
+	
+	<!-- /container -->
+	<script src="js/index.min.js"></script>
+<!--[if IE]>
+<div class="unsupported-browser">
+<div class="container clearfix">
+<h5>Please note that MorFans Lab no longer supports Internet Explorer versions 7 or 8.</h5>
+<p>We recommend upgrading to the latest <a href="http://windows.microsoft.com/ie">Internet Explorer</a>, <a href="https://chrome.google.com">Google Chrome</a>, or <a href="https://mozilla.org/firefox/">Firefox</a>.</p>
+<p>If you are using IE 11, make sure you <a href="http://windows.microsoft.com/en-US/windows7/webpages-look-incorrect-in-Internet-Explorer">turn off "Compatibility View"</a>.thanks!</p>
+</div>
+</div>
+<![endif]-->
+</body>
+</html>
